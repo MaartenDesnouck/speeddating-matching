@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Deelnemer van een speeddate
-class Participant():
+
+class Participant():  # Deelnemer van een speeddate
     id = ""
     first_name = ""
     last_name = ""
@@ -17,4 +17,4 @@ class Participant():
 
     # Return full name
     def fullName(self):
-        return self.first_name+" "+self.last_name
+        return self.first_name + " " + self.last_name

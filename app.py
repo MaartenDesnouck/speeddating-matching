@@ -35,7 +35,7 @@ for participant in participants:
     participantList = []
     # first_name,last_name,sex,likes,org,year,E-mail,+TelNr,id
     participantList.append(Participant(int(participant[8]), participant[
-                        0], participant[1], participant[7]))
+        0], participant[1], participant[7]))
 
 # Create a speeddate
 closingMessage = " Met vriendelijke groeten van het Speeddating-team."
