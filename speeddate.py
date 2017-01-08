@@ -9,7 +9,7 @@ class SpeedDate():  # Speeddate klasse
 
     # Constructor
     def __init__(self, closingMessage, participants):
-        print("Er zijn " + str(len(participants)) + " deelnemers.")
+        print("There are " + str(len(participants)) + " participants.")
         self.closingMessage = closingMessage
         maxId = 0
         for participant in participants:
@@ -20,26 +20,26 @@ class SpeedDate():  # Speeddate klasse
 
         for participant in participants:
             if self.participants[participant.id] != None:
-                print("Er zijn twee deelnemers met dezelfde id: " +
+                print("There are 2 participants with the same id: " +
                       str(participant.id))
                 exit(1)
             self.participants[participant.id] = participant
 
         self.choices = [[False for x in range(
             maxId + 1)] for x in range(maxId + 1)]
-        print("Grootste id is " + str(maxId) + ".")
-        print("Alle deelnemers zijn correct ingeladen.")
+        print("Biggest id is " + str(maxId) + ".")
+        print("All participants have been correctly processed.")
 
     # Id of the participant with a list of choiceIds
     def choose(self, participantId, choiceIds):
         for choiceId in choiceIds:
             if (choiceId != ""):
                 if self.participants[int(choiceId)] == None:
-                    print("Iemand heeft een keuze gemaakt met een onbestaande id: " +
+                    print("Someone chose a non-existant id: " +
                           str(participantId) + " koos " + str(choiceId))
                     exit(1)
                 elif self.participants[int(participantId)] == None:
-                    print("Een onbestaande id heeft een keuze gemaakt: " +
+                    print("A non existant id made a choice: " +
                           str(participantId))
                     exit(1)
                 else:

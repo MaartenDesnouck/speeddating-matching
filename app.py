@@ -26,13 +26,12 @@ DEVICEID = ""
 addPhonenumbers = False
 
 # Load participants
-participants = []
+participantList = []
 with open('participants.csv', 'rb') as participantsFile:
     reader = csv.reader(participantsFile)
     participants = list(reader)
 
 for participant in participants:
-    participantList = []
     # first_name,last_name,sex,likes,org,year,E-mail,+TelNr,id
     participantList.append(Participant(int(participant[8]), participant[
         0], participant[1], participant[7]))
