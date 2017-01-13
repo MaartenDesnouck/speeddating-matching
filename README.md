@@ -1,31 +1,31 @@
 # Speeddating Matching
 
-Installeer de [SMS Gateway API](https://play.google.com/store/apps/details?id=networked.solutions.sms.gateway.api) app vanuit de Play Store.<br>
-Maak vervolgens een account aan op <https://smsgateway.me>.<br>
-Je voegt natuurlijk ook je gsmtoestel toe.<br>
-Vergeet de waardes van **USERNAME**, **PASSWORD** en **DEVICE** niet in te vullen in app.py
+Install the [SMS Gateway API](https://play.google.com/store/apps/details?id=networked.solutions.sms.gateway.api) app.<br>
+Create an account on <https://smsgateway.me>.<br>
+Add a phone to your account.<br>
+Don't forget to fill in the values of **USERNAME**, **PASSWORD** and **DEVICE** in app.py
 
-Het pythonprogramma maakt ook gebruik van **requests** om met smsgateway.me te kunnen praten dus moet je vooraf requests nog installeren:<br>
+This app makes us of **requests** to communicate with smsgateway.me so you will need to install it by running:<br>
 `pip install requests`
 
-Het programma neemt als input 2 bestanden:
+The app takes 2 files as input:
 
-- ##### deelnemers.csv
+- ##### participants.csv
 
-  **Inhoud:** de deelnemers met hun nummer en telefoonnummer e.d<br>
-  **vb.** `Maarten,Desnouck,Man,Interesse,Kring,Jaar,E-mailadres,+32478182969,0`<br>
-  Dit is eenvoudig aan te passen als je bestand er anders uitziet natuurlijk.
+  **Content:** Details about each participant.<br>
+  **e.g.** `Maarten,Desnouck,Man,Interesse,Association,Year,E-mailadres,+32478182969,0`<br>
+  This is easily adaptable off course.
 
-  De separator moet een ',' zijn. Ook dit kan je makkelijk aanpassen als je wil. Let vooral op het telefoonnrformaat; +32 is het best omdat dit overal goed herkend wordt.
+  We use a ',' as separator but this is easily adaptable. Pay attention to the phonenumber format; +12345678900 is best.
 
-- ##### keuzes.csv
+- ##### choices.csv
 
-  **Inhoud:** het nr en zijn/haar keuzes<br>
-  **vb.** `188,84,83,72,77,70` (nr 188 kiest 84,83,72,77 en 70)
+  **Inhoud:** Each id and his/her choices<br>
+  **e.g.** `188,84,83,72,77,70` (id 188 likes 84,83,72,77 and 70)
 
-  Om deze keuzes over te typen van de blaadjes werken we samen in een google spreadsheet, die kan je dan mooi naar csv exporteren.
+  It is advised to use google sheets for putting in all the numbers from the paper slips, it allows for multiple people to work toghether putting all the choices and it allows you to export to csv very easily.
 
-Het programma laten lopen kan zeer eenvoudig met:<br>
-`./app.py` of `python app.py`
+Run the application:<br>
+`./app.py` or `python app.py`
 
 -- Maarten Desnouck, 18 januari 2015
