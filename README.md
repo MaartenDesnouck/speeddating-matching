@@ -5,7 +5,7 @@ Create an account on <https://smsgateway.me>.<br>
 Add a phone to your account.<br>
 Don't forget to fill in the values of **USERNAME**, **PASSWORD** and **DEVICE** in app.py
 
-This app makes us of **requests** to communicate with smsgateway.me so you will need to install it by running:<br>
+This app makes use of **requests** to communicate with smsgateway.me so you will need to install it by running:<br>
 `pip install requests`
 
 The app takes 2 files as input:
