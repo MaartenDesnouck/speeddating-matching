@@ -25,7 +25,7 @@ The app takes 2 files as input:
 
   It is advised to use google sheets for putting in all the numbers from the paper slips, it allows for multiple people to work toghether putting all the choices and it allows you to export to csv very easily.
 
-Run the application:<br>
+Run the application using python2.7:<br>
 `./app.py` or `python app.py`
 
 -- Maarten Desnouck, 18 januari 2015
