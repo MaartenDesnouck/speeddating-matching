@@ -13,7 +13,7 @@ The app takes 2 files as input:
 - ##### participants.csv
 
   **Content:** Details about each participant.<br>
-  **e.g.** `Maarten,Desnouck,Man,Interesse,Association,Year,E-mailadres,+32478182969,0`<br>
+  **e.g.** `Maarten,Desnouck,Man,Interesse,Association,Year,E-mailadres,+32000000000,0`<br>
   This is easily adaptable off course.
 
   We use a ',' as separator but this is easily adaptable. Pay attention to the phonenumber format; +12345678900 is best.
@@ -28,4 +28,4 @@ The app takes 2 files as input:
 Run the application using python2.7:<br>
 `./app.py` or `python app.py`
 
--- Maarten Desnouck, 18 januari 2015
+-- Maarten Desnouck, 18 februari 2018
